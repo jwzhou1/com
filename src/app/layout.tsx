@@ -1,6 +1,5 @@
 "use client";
 
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
@@ -21,12 +20,11 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-black ${inter.className} scroll-smooth`}>
         <Providers>
           <div className="isolate">
             <Header />
             {children}
-            <Footer />
           </div>
           <ScrollToTop />
         </Providers>
